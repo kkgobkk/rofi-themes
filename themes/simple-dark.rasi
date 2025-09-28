@@ -5,14 +5,14 @@
  */
 
 * {
-    dark: #454545;
-    semidark: #dadada;
-    mid: #ececec;
-    light: #fcfcfc;
-    background-color: @light;
+    dark: #232323;
+    semidark: #454545;
+    mid: #858585;
+    light: #ececec;
+    background-color: @dark;
     border: 0px;
-    border-color: @semidark;
-    color: @dark;
+    border-color: @mid;
+    color: @light;
     font: "dejavu sans condensed regular 12";
 }
 
@@ -89,17 +89,17 @@ element-text {
     text-color:       inherit;
 }
 element selected.normal {
-    color: @dark;
-    background-color: @mid;
+    color: @light;
+    background-color: @semidark;
     border-color: #4480d0;
 }
 
 button {
     padding: 6px;
     border-radius: 6px;
-    background-color: @mid;
-    border-color: @dark;
-    color: @dark;
+    background-color: @semidark;
+    border-color: @mid;
+    color: @light;
     horizontal-align: 0.5;
 }
 
