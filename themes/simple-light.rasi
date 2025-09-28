@@ -1,0 +1,110 @@
+/**
+ * ROFI Color theme
+ * User: mare
+ * Copyright: none
+ */
+
+* {
+    background-color: #fcfcfc;
+    dark: #ececec;
+    border: 0px;
+    border-color: #cdcdcd;
+    outline-color: #fcfcfc;
+    color: #454545;
+    font: "dejavu sans condensed regular 12";
+}
+
+configuration {
+    modi: "drun";
+    display-drun: "Search apps:";
+
+}   
+
+window {
+    width: 580;
+    location: center;
+    anchor:   center;
+    border:  1px;
+    border-radius: 7px;
+    spacing: 20px;
+    padding: 20px;
+    children:  [mainbox];
+    orientation: vertical;
+}
+
+mainbox {
+    spacing: 0px;
+    children: [inputbar, listview ];
+}
+
+inputbar {
+    children: [prompt, entry];
+    margin: 0px 0px 0px 8px;
+    padding: 6px 10px 10px 0px;
+    border: 0px 0px 1px 0px;
+    border-radius:  6px 6px 0px 0px;
+}
+
+entry, prompt, case-indicator {
+    text-color: inherit;
+    text-font: inherit;
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {
+    lines: 5;
+    columns: 1;
+    layout: vertical;
+}
+
+entry {
+    placeholder: "";
+    cursor: text;
+}
+
+element {
+    margin: 2px;
+    padding: 6px;
+    vertical-align: 0.5;
+    border-radius: 6px;
+    font:inherit;
+    format: bold;
+    spacing: 20px;
+}
+
+element-icon{
+    background-color: transparent;
+    size: 32px;
+}
+
+element-text {
+    vertical-align: 0.5;
+    format: bold;
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected.normal {
+    color: #454545;
+    background-color: #ececec;
+    border-color: #4480d0;
+}
+
+button {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #ececec;
+    border-color: #454545;
+    color: #292e42;
+    horizontal-align: 0.5;
+}
+
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}
